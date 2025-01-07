@@ -1,0 +1,100 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .login-header {
+    background: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-header .logo img {
+    height: 50px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover; /* Ensure the image covers the entire container */
+  position: relative; /* Allow for overlaying content */
+}
+
+  .login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000 url('log.jpg') no-repeat center/cover;
+    background: url('log.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    position: relative; /* Allow for overlaying content */
+  }
+  
+  
+  .login-form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .login-form-container h2 {
+    color: #e50914;
+    margin-bottom: 20px;
+  }
+  
+  .login-form-container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form-container form button {
+    width: 100%;
+    padding: 10px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form-container p {
+    margin-top: 20px;
+  }
+  
+  .login-form-container p a {
+    text-decoration: none;
+    color: #e50914;
+  }
+  
+  .login-form-container p a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ counselor[1] }}'s Dashboard</title>
+  <link rel="stylesheet" href="afterlogin.css"
+</head>
+<body>
+  <header>
+    <h1>{{ counselor[1] }}'s Counseling Dashboard</h1>
+  </header>
+
+  <main>
+    <div class="dashboard-container">
+      <section class="profile-info">
+        <h2>Profile Information</h2>
+        <p><strong>Specialization:</strong> {{ counselor[2] }}</p>
+        <p><strong>Rating:</strong> {{ counselor[3] }} / 5</p>
+        <p><strong>Available Time:</strong> {{ counselor[4] }}</p>
+        <p><strong>Biography:</strong> {{ counselor[5] }}</p>
+        <button onclick="window.location.href='/edit-profile'">Edit Profile</button>
+      </section>
+
+      <section class="session-info">
+        <h2>Upcoming Sessions</h2>
+        <p>You have no upcoming sessions at the moment.</p>
+        <!-- Display upcoming sessions or consultations here -->
+      </section>
+
+      <section class="feedback-info">
+        <h2>Feedback & Ratings</h2>
+        <p>Here, you can view your feedback from users.</p>
+        <!-- You can integrate feedback ratings from clients here -->
+      </section>
+
+      <section class="availability">
+        <h2>Manage Availability</h2>
+        <form method="POST" action="/update-availability">
+          <label for="availability">Set Your Available Time:</label>
+          <input type="text" id="availability" name="availability" placeholder="e.g., 10:00 AM - 6:00 PM" value="{{ counselor[4] }}" required><br>
+          <button type="submit">Update Availability</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Counseling Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

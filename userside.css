@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #2e3b4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  /* Counselor List Styling */
+  .counselor-list {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .counselors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .counselor-card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .counselor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .counselor-card h3 {
+    color: #2e3b4e;
+  }
+  
+  .book-btn {
+    display: inline-block;
+    background-color: #2e3b4e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .book-btn:hover {
+    background-color: #3c4d6c;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #2e3b4e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
