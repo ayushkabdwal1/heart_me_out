@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Me Out - Client Counseling</title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Heart Me Out</h1>
+        <p class="question">What type of counseling are you looking for?</p>
+
+        <div id="client-counseling">
+            <label for="clientCounselingType">Choose the Type of Counseling:</label>
+            <select id="clientCounselingType">
+                <option value="mentalHealth">Mental Health Counseling</option>
+                <option value="career">Career Counseling</option>
+                <option value="relationship">Relationship Counseling</option>
+                <option value="child">Child Counseling</option>
+                <option value="spiritual">Spiritual Counseling</option>
+            </select>
+            <button onclick="submitClientCounselingSelection()">Next</button>
+        </div>
+    </div>
+
+    <script src="s2.js"></script>
+</body>
+</html>
