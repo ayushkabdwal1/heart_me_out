@@ -3,53 +3,74 @@
 <head>
   <title>Kabdwal.com</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Add Vue.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <header>
-    <div class="front-logo"><img src="logo.png"><p> HEART ME OUT</p></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="feedback.html" class="feedback-btn">Feedback</a></li>
-        
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="hero">
-      <div class="content">
-        <h1>The Open source <br>
-          Counselling website <br>direct call counsellor<br>free</h1><br><br>
-        <p>
-          share for everyone goods.<br>
-         this website give free couselling,<br>
-          without taking your personal data .
-        </p><br><br>
-        <div class="buttons">
-          <a href="special.html" class="btn">COUNSELLOR</a><P1>AND</P1>
-          <a href="s2.html" class="btn">COUNSILING </a>
+  <div id="app">
+    <header>
+      <div class="front-logo">
+        <img src="logo.png" alt="Logo">
+        <p> HEART ME OUT</p>
       </div>
-      
-      </div>
-      <div class="image">
-        <img src="p1.jpg" alt="Team Meeting">
-      </div>
-    </div>
-  </main> 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2024 Kabdwal.com. All rights reserved.</p>
       <nav>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html" class="feedback-btn">Feedback</a></li>
         </ul>
       </nav>
-    </div>
-  </footer>
-  <script src="front.js"></script>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="content">
+          <h1>{{ heroTitle }}</h1>
+          <br><br>
+          <p>
+            {{ heroDescription }}
+          </p>
+          <br><br>
+          <div class="buttons">
+            <a href="special.html" class="btn">{{ counsellorText }}</a>
+            <p1>{{ andText }}</p1>
+            <a href="s2.html" class="btn">{{ counsellingText }}</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="p1.jpg" alt="Team Meeting">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Kabdwal.com. All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          heroTitle: "The Open source Counselling website direct call counsellor free",
+          heroDescription: "Share for everyone's good. This website gives free counselling, without taking your personal data.",
+          counsellorText: "COUNSELLOR",
+          andText: "AND",
+          counsellingText: "COUNSELLING"
+        };
+      }
+    });
+
+    app.mount('#app');
+  </script>
 </body>
 </html>
